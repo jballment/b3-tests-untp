@@ -61,7 +61,7 @@ services:
 
   identity-resolver-service:
     # Replace with local or deployed image
-    image: ghcr.io/pyx-industries/pyx-identity-resolver:latest@sha256:71a02b8b0a2b9c7cc18d33a54060e9af4d543e34bdd6a47c3b3cf4dcadb1711e
+    image: ghcr.io/pyx-industries/pyx-identity-resolver:sha-f668fdf
     ports:
       - '3000:3000'
     environment:
@@ -73,10 +73,10 @@ services:
       - MINIO_BUCKET_NAME=idr-bucket-1
       - IDENTIFIER_PATH=identifiers
       - API_KEY=test123
-      - APP_ENDPOINT=http://localhost:3000
+      - APP_ENDPOINT=https://cherries-api.datatrust.link:3000
       - APP_NAME=IDR-1
-      - RESOLVER_DOMAIN=http://localhost:3000
-      - LINK_TYPE_VOC_DOMAIN=http://localhost:3000/voc
+      - RESOLVER_DOMAIN=https://cherries-api.datatrust.link:3000
+      - LINK_TYPE_VOC_DOMAIN=https://cherries-api.datatrust.link:3000/voc
     depends_on:
       - identity-resolver-service-object-store
 
@@ -94,7 +94,7 @@ services:
 
   mock-global-gs1-resolver:
     # Replace with local or deployed image
-    image: ghcr.io/pyx-industries/pyx-identity-resolver:latest@sha256:71a02b8b0a2b9c7cc18d33a54060e9af4d543e34bdd6a47c3b3cf4dcadb1711e
+    image: ghcr.io/pyx-industries/pyx-identity-resolver:sha-f668fdf
     ports:
       - '3001:3000'
     environment:
@@ -106,10 +106,10 @@ services:
       - MINIO_BUCKET_NAME=idr-bucket-2
       - IDENTIFIER_PATH=identifiers
       - API_KEY=test456
-      - APP_ENDPOINT=http://localhost:3001
+      - APP_ENDPOINT=https://cherries-api.datatrust.link:3001
       - APP_NAME=IDR-2
-      - RESOLVER_DOMAIN=http://localhost:3001
-      - LINK_TYPE_VOC_DOMAIN=http://localhost:3001/voc
+      - RESOLVER_DOMAIN=https://cherries-api.datatrust.link:3001
+      - LINK_TYPE_VOC_DOMAIN=https://cherries-api.datatrust.link:3001/voc
     depends_on:
       - mock-global-gs1-resolver-object-store
 
