@@ -1123,7 +1123,7 @@
                   }
                 },
                 "data": {
-                  "registeredId": "09354441000299",
+                  "registeredId": "(01)09354441000299",
                   "serialNumber": "101",
                   "conformityDeclarations": [
                     {
@@ -1394,7 +1394,7 @@
                     "dlrVerificationPage": "https://cherries.datatrust.link:3003/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries.datatrust.link:3000/api",
+                    "dlrAPIUrl": "https://cherries.datatrust.link:3000",
                     "dlrAPIKey": "test123"
                   },
                   "storage": {
