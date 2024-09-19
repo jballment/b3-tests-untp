@@ -19,11 +19,11 @@
   ],
   "apps": [
     {
-      "name": "DPP Sample",
+      "name": "Facility 0.3.10",
       "type": "producer",
       "assets": {
-        "logo": "Cherries-farm-logo.webp",
-        "brandTitle": "DPP Sample"
+        "logo": "logo.webp",
+        "brandTitle": "Facility 0.3.10"
       },
       "styles": {
         "primaryColor": "#b5651d",
@@ -1410,7 +1410,7 @@
                       }
                     }
                   },
-                  "identifierKeyPath": "/registeredId",
+                  "identifierKeyPath": "/id",
                   "batchIdentifierKeyPath": "/batchNumber",
                   "itemIdentifierKeyPath": "/serialNumber"
                 }
@@ -1426,7 +1426,22 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Orchard Facility",
+      "type": "producer",
+      "assets": {
+        "logo": "Cherries-farm-logo.webp",
+        "brandTitle": "Orchard Facility"
+      },
+      "styles": {
+        "primaryColor": "#b5651d",
+        "secondaryColor": "#391561",
+        "tertiaryColor": "#ffffff"
+      },
+      "features": [
         {
           "name": "Issue DPP",
           "id": "produce_product",
