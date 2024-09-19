@@ -1383,7 +1383,7 @@
                 {
                   "vckit": {
                     "vckitAPIUrl": "https://cherries.datatrust.link:3332/v1",
-                    "issuer": "did:web:cherries.datatrust.link"
+                    "issuer": "did:web:cherries-api.datatrust.link"
                   },
                   "dpp": {
                     "context": ["https://test.uncefact.org/vocabulary/untp/dpp/0.3.10/"],
