@@ -1390,8 +1390,9 @@
                     "renderTemplate": [],
                     "type": ["VerifiableCredential", "DigitalProductPassport"],
                     "dlrLinkTitle": "Product Passport",
+                    "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link:3003/verify"
+                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
                   },
                   "dlr": {
                     "dlrAPIUrl": "https://cherries.datatrust.link:3000",
