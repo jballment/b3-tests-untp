@@ -1410,7 +1410,7 @@
                       }
                     }
                   },
-                  "identifierKeyPath": "/id",
+                  "identifierKeyPath": "/registeredId",
                   "batchIdentifierKeyPath": "/batchNumber",
                   "itemIdentifierKeyPath": "/serialNumber"
                 }
