@@ -19,11 +19,11 @@
   ],
   "apps": [
     {
-      "name": "Orchard Facility",
+      "name": "DPP Sample",
       "type": "producer",
       "assets": {
         "logo": "Cherries-farm-logo.webp",
-        "brandTitle": "Orchard Facility"
+        "brandTitle": "DPP Sample"
       },
       "styles": {
         "primaryColor": "#b5651d",
@@ -1382,8 +1382,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "http://localhost:3332/v1",
-                    "issuer": "did:web:wallaby-trusty-crow.ngrok-free.app"
+                    "vckitAPIUrl": "https://cherries.datatrust.link:3332/v1",
+                    "issuer": "did:web:cherries.datatrust.link"
                   },
                   "dpp": {
                     "context": ["https://test.uncefact.org/vocabulary/untp/dpp/0.3.10/"],
@@ -1391,14 +1391,14 @@
                     "type": ["VerifiableCredential", "DigitalProductPassport"],
                     "dlrLinkTitle": "Product Passport",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "http://localhost:3003/verify"
+                    "dlrVerificationPage": "https://cherries.datatrust.link:3003/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "http://localhost:3000/api",
+                    "dlrAPIUrl": "https://cherries.datatrust.link:3000/api",
                     "dlrAPIKey": "test123"
                   },
                   "storage": {
-                    "url": "http://localhost:3334/v1/documents",
+                    "url": "https://cherries.datatrust.link:3334/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
