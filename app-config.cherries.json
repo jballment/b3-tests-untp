@@ -1424,7 +1424,7 @@
               "name": "mergeToLocalStorage",
               "parameters": [
                 {
-                  "storageKey": "dpps",
+                  "storageKey": "facility_dpps",
                   "objectKeyPath": "/vc/credentialSubject/registeredId"
                 }
               ]
