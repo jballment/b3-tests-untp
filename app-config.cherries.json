@@ -1399,7 +1399,8 @@
                   },
                   "dlr": {
                     "dlrAPIUrl": "https://cherries.datatrust.link:3000",
-                    "dlrAPIKey": "test123"
+                    "dlrAPIKey": "test123",
+                    "namespace": "gs1"
                   },
                   "storage": {
                     "url": "https://cherries.datatrust.link:3334/v1/documents",
@@ -1469,7 +1470,7 @@
                             }
                           },
                           "id": {
-                            "readOnly": true,
+                            "readOnly": false,
                             "example": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
                             "type": "string",
                             "format": "uri",
@@ -2377,7 +2378,11 @@
                     "constructData": {
                       "mappingFields": [
                         {
-                          "sourcePath": "/vc/credentialSubject/id",
+                          "sourcePath": "/linkResolver",
+                          "destinationPath": "/id"
+                        },
+                        {
+                          "sourcePath": "/linkResolver",
                           "destinationPath": "/epcList/index/id"
                         },
                         {
@@ -2427,10 +2432,6 @@
                       ],
                       "generationFields": [
                         {
-                          "path": "/id",
-                          "handler": "generateIdWithSerialNumber"
-                        },
-                        {
                           "path": "/eventTime",
                           "handler": "generateCurrentDatetime"
                         }
@@ -2455,8 +2456,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "http://localhost:3332/v1",
-                    "issuer": "did:web:wallaby-trusty-crow.ngrok-free.app"
+                    "vckitAPIUrl": "https://cherries.datatrust.link:3332/v1",
+                    "issuer": "did:web:cherries-api.datatrust.link"
                   },
                   "epcisTransactionEvent": {
                     "context": ["https://test.uncefact.org/vocabulary/untp/dte/0.3.10/"],
@@ -2466,15 +2467,15 @@
                     "dlrLinkTitle": "Transaction Event",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "http://localhost:3003/verify"
+                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "http://localhost:3000",
+                    "dlrAPIUrl": "https://cherries.datatrust.link:3000",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "http://localhost:3334/v1/documents",
+                    "url": "https://cherries.datatrust.link:3334/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -2486,8 +2487,8 @@
                       }
                     }
                   },
-                  "identifierKeyPath": "/id",
-                  "localStorageParams": { "storageKey": "facility_dpps", "keyPath": "/epcList/index/name" }
+                  "identifierKeyPath": "/epcList/0/registeredId",
+                  "localStorageParams": { "storageKey": "facility_dpps", "keyPath": "/epcList/0/registeredId" }
                 }
               ]
             }
