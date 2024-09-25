@@ -1373,7 +1373,17 @@
             {
               "name": "CustomButton",
               "type": "Submit",
-              "props": {}
+              "props": {
+                "includeDownload": true,
+                "downloadFileName": "product"
+              }
+            },
+            {
+              "name": "BarcodeGenerator",
+              "type": "Result",
+              "props": {
+                "dataPath": "/vc/credentialSubject/registeredId"
+              }
             }
           ],
           "services": [
