@@ -1194,7 +1194,7 @@
                       "conformityEvidence": {
                         "hashMethod": "SHA-256",
                         "hashDigest": "6239119",
-                        "linkURL": "https://cherries.datatrust.link/verify?q=%7B%22payload%22%3A%20%7B%22uri%22%3A%20%22https%3A//cherries.datatrust.link%3A3334/v1/verifiable-credentials/packhouse_freshchain_gln_verification_dcc.json%22%2C%20%22hash%22%3A%20%22c9ef1c0b263c09a51512b7786dede6bd54c1804d1b7c0da6ae06468e0cfdeec839bc2432c01e46b150016fce1003a3f4604665fd266c14b21019fd71f6394fc6%22%2C%20%22key%22%3A%20%22d6e67853f57c4e750fa1499e9dc8d21f8908fa052286c355c37756501dd97aaa%22%7D%7D",
+                        "linkURL": "https://cherries.demo.pyx.io/verify?q=%7B%22payload%22%3A%20%7B%22uri%22%3A%20%22https%3A//cherries.demo.pyx.io%3A3334/v1/verifiable-credentials/packhouse_freshchain_gln_verification_dcc.json%22%2C%20%22hash%22%3A%20%22c9ef1c0b263c09a51512b7786dede6bd54c1804d1b7c0da6ae06468e0cfdeec839bc2432c01e46b150016fce1003a3f4604665fd266c14b21019fd71f6394fc6%22%2C%20%22key%22%3A%20%22d6e67853f57c4e750fa1499e9dc8d21f8908fa052286c355c37756501dd97aaa%22%7D%7D",
                         "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
                         "linkName": "FreshChain GLN Verification",
                         "encryptionMethod": "AES"
@@ -1223,7 +1223,7 @@
                           ]
                         }
                       },
-                      "id": "https://cherries.datatrust.link/verify?q=%7B%22payload%22%3A%20%7B%22uri%22%3A%20%22https%3A//cherries.datatrust.link%3A3334/v1/verifiable-credentials/packhouse_freshchain_gln_verification_dcc.json%22%2C%20%22hash%22%3A%20%22c9ef1c0b263c09a51512b7786dede6bd54c1804d1b7c0da6ae06468e0cfdeec839bc2432c01e46b150016fce1003a3f4604665fd266c14b21019fd71f6394fc6%22%2C%20%22key%22%3A%20%22d6e67853f57c4e750fa1499e9dc8d21f8908fa052286c355c37756501dd97aaa%22%7D%7D",
+                      "id": "https://cherries.demo.pyx.io/verify?q=%7B%22payload%22%3A%20%7B%22uri%22%3A%20%22https%3A//cherries.demo.pyx.io%3A3334/v1/verifiable-credentials/packhouse_freshchain_gln_verification_dcc.json%22%2C%20%22hash%22%3A%20%22c9ef1c0b263c09a51512b7786dede6bd54c1804d1b7c0da6ae06468e0cfdeec839bc2432c01e46b150016fce1003a3f4604665fd266c14b21019fd71f6394fc6%22%2C%20%22key%22%3A%20%22d6e67853f57c4e750fa1499e9dc8d21f8908fa052286c355c37756501dd97aaa%22%7D%7D",
                       "type": [
                         "Declaration"
                       ],
@@ -1277,7 +1277,7 @@
                     {
                       "hashMethod": "SHA-256",
                       "hashDigest": "6239119",
-                      "linkURL": "https://cherries.datatrust.link/verify?q=%7B%22payload%22%3A%20%7B%22uri%22%3A%20%22https%3A//cherries.datatrust.link%3A3334/v1/verifiable-credentials/packhouse_packing_event_dte.json%22%2C%20%22hash%22%3A%20%22982a9e7c092d6c085264153fb7b82c572a1c454f1388a938a21630adee95c20f093d044bbdf2a35f0376254a6785efda7abfea5894403568c13d1bdfbe6b985c%22%2C%20%22key%22%3A%20%22066aea6a60da45181cb07d236c10d017673b70d4d9725660623bb2b98c3ec08e%22%7D%7D",
+                      "linkURL": "https://cherries.demo.pyx.io/verify?q=%7B%22payload%22%3A%20%7B%22uri%22%3A%20%22https%3A//cherries.demo.pyx.io%3A3334/v1/verifiable-credentials/packhouse_packing_event_dte.json%22%2C%20%22hash%22%3A%20%22982a9e7c092d6c085264153fb7b82c572a1c454f1388a938a21630adee95c20f093d044bbdf2a35f0376254a6785efda7abfea5894403568c13d1bdfbe6b985c%22%2C%20%22key%22%3A%20%22066aea6a60da45181cb07d236c10d017673b70d4d9725660623bb2b98c3ec08e%22%7D%7D",
                       "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                       "linkName": "Packing Event Credential",
                       "encryptionMethod": "AES"
@@ -1285,7 +1285,7 @@
                     {
                       "hashMethod": "SHA-256",
                       "hashDigest": "6239119",
-                      "linkURL": "https://cherries.datatrust.link/verify?q=%7B%22payload%22%3A%20%7B%22uri%22%3A%20%22https%3A//cherries.datatrust.link%3A3334/v1/verifiable-credentials/packhouse_palletisation_event_dte.json%22%2C%20%22hash%22%3A%20%2286e08447069efb13a9f1d8a987fd15efe30dd2e8b6779fbd7f56ef99bfe773d0caefd013c2902421ed3e954afcc04284a76ca0ef00787a8fb620c1c426b2abd3%22%2C%20%22key%22%3A%20%226bd2fa0282e0cb00ff023da57f303f2f97440da9dd37bbf7a4ec3045d755e5bf%22%7D%7D",
+                      "linkURL": "https://cherries.demo.pyx.io/verify?q=%7B%22payload%22%3A%20%7B%22uri%22%3A%20%22https%3A//cherries.demo.pyx.io%3A3334/v1/verifiable-credentials/packhouse_palletisation_event_dte.json%22%2C%20%22hash%22%3A%20%2286e08447069efb13a9f1d8a987fd15efe30dd2e8b6779fbd7f56ef99bfe773d0caefd013c2902421ed3e954afcc04284a76ca0ef00787a8fb620c1c426b2abd3%22%2C%20%22key%22%3A%20%226bd2fa0282e0cb00ff023da57f303f2f97440da9dd37bbf7a4ec3045d755e5bf%22%7D%7D",
                       "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
                       "linkName": "Palletisation Event Credential",
                       "encryptionMethod": "AES"
@@ -1392,8 +1392,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://cherries-api.datatrust.link/v1",
-                    "issuer": "did:web:cherries-api.datatrust.link"
+                    "vckitAPIUrl": "https://cherries-vckit.demo.pyx.io/v1",
+                    "issuer": "did:web:cherries-vckit.demo.pyx.io"
                   },
                   "dpp": {
                     "context": ["https://test.uncefact.org/vocabulary/untp/dpp/0.3.10/"],
@@ -1405,15 +1405,15 @@
                     "dlrLinkTitle": "Product Passport",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
+                    "dlrVerificationPage": "https://cherries.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries-idr.datatrust.link",
+                    "dlrAPIUrl": "https://cherries-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://cherries-storage.datatrust.link/v1/documents",
+                    "url": "https://cherries-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -2466,8 +2466,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://cherries-api.datatrust.link/v1",
-                    "issuer": "did:web:cherries-api.datatrust.link"
+                    "vckitAPIUrl": "https://cherries-vckit.demo.pyx.io/v1",
+                    "issuer": "did:web:cherries-vckit.demo.pyx.io"
                   },
                   "epcisTransactionEvent": {
                     "context": ["https://test.uncefact.org/vocabulary/untp/dte/0.3.10/"],
@@ -2477,15 +2477,15 @@
                     "dlrLinkTitle": "Transaction Event",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
+                    "dlrVerificationPage": "https://cherries.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries-idr.datatrust.link",
+                    "dlrAPIUrl": "https://cherries-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://cherries-storage.datatrust.link/v1/documents",
+                    "url": "https://cherries-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -3555,7 +3555,7 @@
                   }
                 },
                 "data": {
-                  "image": "https://cherries.datatrust.link/logo512.png",
+                  "image": "https://cherries.demo.pyx.io/logo512.png",
                   "productIdentifier": [
                     {
                       "scheme": "https://id.gs1.org/gtin",
@@ -3690,8 +3690,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://cherries-api.datatrust.link/v1",
-                    "issuer": "did:web:cherries-api.datatrust.link"
+                    "vckitAPIUrl": "https://cherries-vckit.demo.pyx.io/v1",
+                    "issuer": "did:web:cherries-vckit.demo.pyx.io"
                   },
                   "dpp": {
                     "context": ["https://test.uncefact.org/vocabulary/untp/dpp/0.3.10/"],
@@ -3705,15 +3705,15 @@
                     "dlrLinkTitle": "Cherries Product Passport",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
+                    "dlrVerificationPage": "https://cherries.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries-idr.datatrust.link",
+                    "dlrAPIUrl": "https://cherries-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://cherries-storage.datatrust.link/v1/documents",
+                    "url": "https://cherries-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -4111,7 +4111,7 @@
                         {
                           "path": "/sourceParty",
                           "data": {
-                            "id": "did:web:cherries-api.datatrust.link",
+                            "id": "did:web:cherries-vckit.demo.pyx.io",
                             "name": "Cherries Farm",
                             "identifiers": [
                               {
@@ -4129,7 +4129,7 @@
                         {
                           "path": "/destinationParty",
                           "data": {
-                            "id": "did:web:cherries-api.datatrust.link",
+                            "id": "did:web:cherries-vckit.demo.pyx.io",
                             "name": "Cherries Processor",
                             "identifiers": [
                               {
@@ -4175,8 +4175,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://cherries-api.datatrust.link/v1",
-                    "issuer": "did:web:cherries-api.datatrust.link"
+                    "vckitAPIUrl": "https://cherries-vckit.demo.pyx.io/v1",
+                    "issuer": "did:web:cherries-vckit.demo.pyx.io"
                   },
                   "epcisTransactionEvent": {
                     "context": ["https://dpp-json-ld.s3.ap-southeast-2.amazonaws.com/transaction-event-ld.json"],
@@ -4190,15 +4190,15 @@
                     "dlrLinkTitle": "Transaction Event",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
+                    "dlrVerificationPage": "https://cherries.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries-idr.datatrust.link",
+                    "dlrAPIUrl": "https://cherries-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://cherries-storage.datatrust.link/v1/documents",
+                    "url": "https://cherries-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -4759,7 +4759,7 @@
                   }
                 },
                 "data": {
-                  "image": "https://cherries.datatrust.link/logo512.png",
+                  "image": "https://cherries.demo.pyx.io/logo512.png",
                   "productIdentifier": [
                     {
                       "scheme": "https://id.gs1.org/gtin",
@@ -4894,8 +4894,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://cherries-api.datatrust.link/v1",
-                    "issuer": "did:web:cherries-api.datatrust.link"
+                    "vckitAPIUrl": "https://cherries-vckit.demo.pyx.io/v1",
+                    "issuer": "did:web:cherries-vckit.demo.pyx.io"
                   },
                   "dpp": {
                     "context": ["https://dpp-json-ld.s3.ap-southeast-2.amazonaws.com/dppld.json"],
@@ -4909,15 +4909,15 @@
                     "dlrLinkTitle": "Cherries Product Passport",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
+                    "dlrVerificationPage": "https://cherries.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries-idr.datatrust.link",
+                    "dlrAPIUrl": "https://cherries-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://cherries-storage.datatrust.link/v1/documents",
+                    "url": "https://cherries-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -5313,7 +5313,7 @@
                         {
                           "path": "/sourceParty",
                           "data": {
-                            "id": "did:web:cherries-api.datatrust.link",
+                            "id": "did:web:cherries-vckit.demo.pyx.io",
                             "name": "Cherries Farm",
                             "identifiers": [
                               {
@@ -5331,7 +5331,7 @@
                         {
                           "path": "/destinationParty",
                           "data": {
-                            "id": "did:web:cherries-api.datatrust.link",
+                            "id": "did:web:cherries-vckit.demo.pyx.io",
                             "name": "Cherries Processor",
                             "identifiers": [
                               {
@@ -5377,8 +5377,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://cherries-api.datatrust.link/v1",
-                    "issuer": "did:web:cherries-api.datatrust.link"
+                    "vckitAPIUrl": "https://cherries-vckit.demo.pyx.io/v1",
+                    "issuer": "did:web:cherries-vckit.demo.pyx.io"
                   },
                   "epcisTransactionEvent": {
                     "context": ["https://dpp-json-ld.s3.ap-southeast-2.amazonaws.com/transaction-event-ld.json"],
@@ -5392,15 +5392,15 @@
                     "dlrLinkTitle": "Transaction Event",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
+                    "dlrVerificationPage": "https://cherries.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries-idr.datatrust.link",
+                    "dlrAPIUrl": "https://cherries-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://cherries-storage.datatrust.link/v1/documents",
+                    "url": "https://cherries-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -5961,7 +5961,7 @@
                   }
                 },
                 "data": {
-                  "image": "https://cherries.datatrust.link/logo512.png",
+                  "image": "https://cherries.demo.pyx.io/logo512.png",
                   "productIdentifier": [
                     {
                       "scheme": "https://id.gs1.org/gtin",
@@ -6096,8 +6096,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://cherries-api.datatrust.link/v1",
-                    "issuer": "did:web:cherries-api.datatrust.link"
+                    "vckitAPIUrl": "https://cherries-vckit.demo.pyx.io/v1",
+                    "issuer": "did:web:cherries-vckit.demo.pyx.io"
                   },
                   "dpp": {
                     "context": ["https://dpp-json-ld.s3.ap-southeast-2.amazonaws.com/dppld.json"],
@@ -6111,15 +6111,15 @@
                     "dlrLinkTitle": "Cherries Product Passport",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
+                    "dlrVerificationPage": "https://cherries.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries-idr.datatrust.link",
+                    "dlrAPIUrl": "https://cherries-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://cherries-storage.datatrust.link/v1/documents",
+                    "url": "https://cherries-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -6515,7 +6515,7 @@
                         {
                           "path": "/sourceParty",
                           "data": {
-                            "id": "did:web:cherries-api.datatrust.link",
+                            "id": "did:web:cherries-vckit.demo.pyx.io",
                             "name": "Cherries Farm",
                             "identifiers": [
                               {
@@ -6533,7 +6533,7 @@
                         {
                           "path": "/destinationParty",
                           "data": {
-                            "id": "did:web:cherries-api.datatrust.link",
+                            "id": "did:web:cherries-vckit.demo.pyx.io",
                             "name": "Cherries Processor",
                             "identifiers": [
                               {
@@ -6579,8 +6579,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://cherries-api.datatrust.link/v1",
-                    "issuer": "did:web:cherries-api.datatrust.link"
+                    "vckitAPIUrl": "https://cherries-vckit.demo.pyx.io/v1",
+                    "issuer": "did:web:cherries-vckit.demo.pyx.io"
                   },
                   "epcisTransactionEvent": {
                     "context": ["https://dpp-json-ld.s3.ap-southeast-2.amazonaws.com/transaction-event-ld.json"],
@@ -6594,15 +6594,15 @@
                     "dlrLinkTitle": "Transaction Event",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
+                    "dlrVerificationPage": "https://cherries.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries-idr.datatrust.link",
+                    "dlrAPIUrl": "https://cherries-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://cherries-storage.datatrust.link/v1/documents",
+                    "url": "https://cherries-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -7163,7 +7163,7 @@
                   }
                 },
                 "data": {
-                  "image": "https://cherries.datatrust.link/logo512.png",
+                  "image": "https://cherries.demo.pyx.io/logo512.png",
                   "productIdentifier": [
                     {
                       "scheme": "https://id.gs1.org/gtin",
@@ -7298,8 +7298,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://cherries-api.datatrust.link/v1",
-                    "issuer": "did:web:cherries-api.datatrust.link"
+                    "vckitAPIUrl": "https://cherries-vckit.demo.pyx.io/v1",
+                    "issuer": "did:web:cherries-vckit.demo.pyx.io"
                   },
                   "dpp": {
                     "context": ["https://dpp-json-ld.s3.ap-southeast-2.amazonaws.com/dppld.json"],
@@ -7313,15 +7313,15 @@
                     "dlrLinkTitle": "Cherries Product Passport",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
+                    "dlrVerificationPage": "https://cherries.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries-idr.datatrust.link",
+                    "dlrAPIUrl": "https://cherries-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://cherries-storage.datatrust.link/v1/documents",
+                    "url": "https://cherries-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -7717,7 +7717,7 @@
                         {
                           "path": "/sourceParty",
                           "data": {
-                            "id": "did:web:cherries-api.datatrust.link",
+                            "id": "did:web:cherries-vckit.demo.pyx.io",
                             "name": "Cherries Farm",
                             "identifiers": [
                               {
@@ -7735,7 +7735,7 @@
                         {
                           "path": "/destinationParty",
                           "data": {
-                            "id": "did:web:cherries-api.datatrust.link",
+                            "id": "did:web:cherries-vckit.demo.pyx.io",
                             "name": "Cherries Processor",
                             "identifiers": [
                               {
@@ -7781,8 +7781,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "https://cherries-api.datatrust.link/v1",
-                    "issuer": "did:web:cherries-api.datatrust.link"
+                    "vckitAPIUrl": "https://cherries-vckit.demo.pyx.io/v1",
+                    "issuer": "did:web:cherries-vckit.demo.pyx.io"
                   },
                   "epcisTransactionEvent": {
                     "context": ["https://dpp-json-ld.s3.ap-southeast-2.amazonaws.com/transaction-event-ld.json"],
@@ -7796,15 +7796,15 @@
                     "dlrLinkTitle": "Transaction Event",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "https://cherries.datatrust.link/verify"
+                    "dlrVerificationPage": "https://cherries.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "https://cherries-idr.datatrust.link",
+                    "dlrAPIUrl": "https://cherries-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "https://cherries-storage.datatrust.link/v1/documents",
+                    "url": "https://cherries-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -7828,13 +7828,13 @@
   ],
   "identifyProvider": {
     "type": "gs1",
-    "url": "https://cherries-gs1.datatrust.link/gs1"
+    "url": "https://cherries-gs1.demo.pyx.io/gs1"
   },
   "defaultVerificationServiceLink": {
     "title": "Default Verification Service",
     "context": "Default Verification Service",
     "type": "application/json",
-    "href": "https://cherries-api.datatrust.link/agent/routeVerificationCredential",
+    "href": "https://cherries-vckit.demo.pyx.io/agent/routeVerificationCredential",
     "hreflang": ["en"],
     "apiKey": "test123"
   }

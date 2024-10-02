@@ -51,7 +51,7 @@ services:
     environment:
       - API_VERSION=v1
       - PROTOCOL=http
-      - DOMAIN=cherries-storage.datatrust.link
+      - DOMAIN=cherries-storage.demo.pyx.io
       - PORT=443
       - AVAILABLE_BUCKETS=verifiable-credentials,private-verifiable-credentials,epcis-events
       - STORAGE_TYPE=local
@@ -73,10 +73,10 @@ services:
       - OBJECT_STORAGE_PATH_STYLE=true
       - IDENTIFIER_PATH=identifiers
       - API_KEY=test123
-      - APP_ENDPOINT=https://cherries-idr.datatrust.link
+      - APP_ENDPOINT=https://cherries-idr.demo.pyx.io
       - APP_NAME=IDR-1
-      - RESOLVER_DOMAIN=https://cherries-idr.datatrust.link
-      - LINK_TYPE_VOC_DOMAIN=https://cherries-idr.datatrust.link/voc
+      - RESOLVER_DOMAIN=https://cherries-idr.demo.pyx.io
+      - LINK_TYPE_VOC_DOMAIN=https://cherries-idr.demo.pyx.io/voc
       - PORT=3000
     depends_on:
       - identity-resolver-service-object-store
@@ -108,10 +108,10 @@ services:
       - OBJECT_STORAGE_PATH_STYLE=true
       - IDENTIFIER_PATH=identifiers
       - API_KEY=test456
-      - APP_ENDPOINT=https://cherries-gs1.datatrust.link
+      - APP_ENDPOINT=https://cherries-gs1.demo.pyx.io
       - APP_NAME=IDR-2
-      - RESOLVER_DOMAIN=https://cherries-gs1.datatrust.link
-      - LINK_TYPE_VOC_DOMAIN=https://cherries-gs1.datatrust.link/voc
+      - RESOLVER_DOMAIN=https://cherries-gs1.demo.pyx.io
+      - LINK_TYPE_VOC_DOMAIN=https://cherries-gs1.demo.pyx.io/voc
       - PORT=3001
     depends_on:
       - mock-global-gs1-resolver-object-store
