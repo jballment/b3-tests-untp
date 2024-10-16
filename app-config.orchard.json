@@ -1392,8 +1392,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "http://localhost:3332/v1",
-                    "issuer": "did:web:wallaby-trusty-crow.ngrok-free.app"
+                    "vckitAPIUrl": "https://orchard-vc.demo.pyx.io/v1",
+                    "issuer": "did:web:orchard-vc.demo.pyx.io"
                   },
                   "dpp": {
                     "context": [
@@ -1412,15 +1412,15 @@
                     "dlrLinkTitle": "Product Passport",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "http://localhost:3003/verify"
+                    "dlrVerificationPage": "https://orchard.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "http://localhost:3000",
+                    "dlrAPIUrl": "https://orchard-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "http://localhost:3334/v1/documents",
+                    "url": "https://orchard-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -1451,7 +1451,7 @@
         },
         {
           "name": "Harvest Event",
-          "id": "transaction_product",
+          "id": "harvest_product",
           "components": [
             {
               "name": "LocalStorageLoader",
@@ -1944,8 +1944,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "http://localhost:3332/v1",
-                    "issuer": "did:web:wallaby-trusty-crow.ngrok-free.app"
+                    "vckitAPIUrl": "https://orchard-vc.demo.pyx.io/v1",
+                    "issuer": "did:web:orchard-vc.demo.pyx.io"
                   },
                   "epcisTransactionEvent": {
                     "context": ["https://test.uncefact.org/vocabulary/untp/dte/0.3.10/"],
@@ -1955,15 +1955,15 @@
                     "dlrLinkTitle": "Object Event",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "http://localhost:3003/verify"
+                    "dlrVerificationPage": "https://orchard.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "http://localhost:3000",
+                    "dlrAPIUrl": "https://orchard-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "http://localhost:3334/v1/documents",
+                    "url": "https://orchard-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -1984,7 +1984,7 @@
         },
         {
           "name": "Transfer Event",
-          "id": "transaction_product",
+          "id": "transfer_product",
           "components": [
             {
               "name": "LocalStorageLoader",
@@ -3006,8 +3006,8 @@
               "parameters": [
                 {
                   "vckit": {
-                    "vckitAPIUrl": "http://localhost:3332/v1",
-                    "issuer": "did:web:wallaby-trusty-crow.ngrok-free.app"
+                    "vckitAPIUrl": "https://orchard-vc.demo.pyx.io/v1",
+                    "issuer": "did:web:orchard-vc.demo.pyx.io"
                   },
                   "epcisTransactionEvent": {
                     "context": ["https://test.uncefact.org/vocabulary/untp/dte/0.3.10/"],
@@ -3017,15 +3017,15 @@
                     "dlrLinkTitle": "Transaction Event",
                     "dlrIdentificationKeyNamespace": "gs1",
                     "dlrIdentificationKeyType": "gtin",
-                    "dlrVerificationPage": "http://localhost:3003/verify"
+                    "dlrVerificationPage": "https://orchard.demo.pyx.io/verify"
                   },
                   "dlr": {
-                    "dlrAPIUrl": "http://localhost:3000",
+                    "dlrAPIUrl": "https://orchard-idr.demo.pyx.io",
                     "dlrAPIKey": "test123",
                     "namespace": "gs1"
                   },
                   "storage": {
-                    "url": "http://localhost:3334/v1/documents",
+                    "url": "https://orchard-storage.demo.pyx.io/v1/documents",
                     "params": {
                       "resultPath": "/uri",
                       "bucket": "verifiable-credentials"
@@ -3049,13 +3049,13 @@
   ],
   "identifyProvider": {
     "type": "gs1",
-    "url": "http://localhost:3001/gs1"
+    "url": "https://orchard-gs1.demo.pyx.io/gs1"
   },
   "defaultVerificationServiceLink": {
     "title": "Default Verification Service",
     "context": "Default Verification Service",
     "type": "application/json",
-    "href": "http://localhost:3332/agent/routeVerificationCredential",
+    "href": "https://orchard-vc.demo.pyx.io/agent/routeVerificationCredential",
     "hreflang": [
       "en"
     ],
