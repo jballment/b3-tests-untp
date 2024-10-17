@@ -1123,7 +1123,7 @@
                   }
                 },
                 "data": {
-                  "registeredId": "09354441000299",
+                  "registeredId": "(01)09354441000299",
                   "serialNumber": "101",
                   "conformityDeclarations": [
                     {
@@ -1433,17 +1433,7 @@
                       }
                     }
                   },
-                  "identifierKeyPath": {
-                    "function": "concatService",
-                    "args": [
-                      { "type": "text", "value": "(01)" },
-                      { "type": "path", "value": "/registeredId" },
-                      { "type": "text", "value": "(10)" },
-                      { "type": "path", "value": "/batchNumber" },
-                      { "type": "text", "value": "(21)" },
-                      { "type": "path", "value": "/serialNumber" }
-                    ]
-                  }
+                  "identifierKeyPath": "/registeredId"
                 }
               ]
             },
@@ -2522,17 +2512,7 @@
                       }
                     }
                   },
-                  "identifierKeyPath": {
-                    "function": "concatService",
-                    "args": [
-                      { "type": "text", "value": "(01)" },
-                      { "type": "path", "value": "/epcList/0/registeredId" },
-                      { "type": "text", "value": "(10)" },
-                      { "type": "path", "value": "/epcList/0/batchNumber" },
-                      { "type": "text", "value": "(21)" },
-                      { "type": "path", "value": "/epcList/0/serialNumber" }
-                    ]
-                  },
+                  "identifierKeyPath": "/epcList/0/registeredId",
                   "localStorageParams": { "storageKey": "CherriesFarm_dpps", "keyPath": "/epcList/0/registeredId" }
                 }
               ]
@@ -3661,7 +3641,7 @@
                         }
                       },
                       "data": {
-                        "registeredId": "09354441000299",
+                        "registeredId": "(01)09354441000299",
                         "serialNumber": "101",
                         "conformityDeclarations": [
                           {
@@ -3974,17 +3954,7 @@
                       }
                     }
                   },
-                  "identifierKeyPath": {
-                    "function": "concatService",
-                    "args": [
-                      { "type": "text", "value": "(01)" },
-                      { "type": "path", "value": "/registeredId" },
-                      { "type": "text", "value": "(10)" },
-                      { "type": "path", "value": "/batchNumber" },
-                      { "type": "text", "value": "(21)" },
-                      { "type": "path", "value": "/serialNumber" }
-                    ]
-                  }
+                  "identifierKeyPath": "/registeredId" 
                 }
               ]
             },
@@ -5067,17 +5037,7 @@
                       }
                     }
                   },
-                  "identifierKeyPath": {
-                    "function": "concatService",
-                    "args": [
-                      { "type": "text", "value": "(01)" },
-                      { "type": "path", "value": "/epcList/0/registeredId" },
-                      { "type": "text", "value": "(10)" },
-                      { "type": "path", "value": "/epcList/0/batchNumber" },
-                      { "type": "text", "value": "(21)" },
-                      { "type": "path", "value": "/epcList/0/serialNumber" }
-                    ]
-                  },
+                  "identifierKeyPath": "/epcList/0/registeredId",
                   "localStorageParams": { "storageKey": "CherriesFarm_dpps", "keyPath": "/epcList/0/registeredId" }
                 }
               ]
@@ -6206,7 +6166,7 @@
                         }
                       },
                       "data": {
-                        "registeredId": "09339687238740",
+                        "registeredId": "(01)09339687238740",
                         "serialNumber": "1.0",
                         "conformityDeclarations": [
                           {
@@ -6502,17 +6462,7 @@
                       }
                     }
                   },
-                  "identifierKeyPath": {
-                    "function": "concatService",
-                    "args": [
-                      { "type": "text", "value": "(01)" },
-                      { "type": "path", "value": "/registeredId" },
-                      { "type": "text", "value": "(10)" },
-                      { "type": "path", "value": "/batchNumber" },
-                      { "type": "text", "value": "(21)" },
-                      { "type": "path", "value": "/serialNumber" }
-                    ]
-                  }
+                  "identifierKeyPath": "/registeredId" 
                 }
               ]
             },
