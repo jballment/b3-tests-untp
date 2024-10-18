@@ -2852,7 +2852,8 @@
   ],
   "identifyProvider": {
     "type": "gs1",
-    "url": "https://mock-gs1-idr.cadcu.pyx.io"
+    "url": "https://mock-gs1-idr.cadcu.pyx.io",
+    "namespace": "gs1"
   },
   "defaultVerificationServiceLink": {
     "title": "Default Verification Service",
