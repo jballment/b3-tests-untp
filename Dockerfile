@@ -8,12 +8,13 @@ FROM base AS dependencies
 COPY . .
 RUN yarn install && yarn cache clean
 
+ARG CONFIG_FILE
+COPY ${CONFIG_FILE} packages/mock-app/src/constants/app-config.json
+
 # ---- Build ----
 FROM dependencies AS build
 RUN yarn build
 
-ARG CONFIG_FILE
-COPY ${CONFIG_FILE} packages/mock-app/src/constants/app-config.json
 WORKDIR /app/packages/mock-app
 RUN yarn build
 
