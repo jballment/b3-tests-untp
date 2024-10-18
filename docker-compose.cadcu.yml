@@ -100,7 +100,7 @@ services:
       - '3001:3001'
     environment:
       - MINIO_ENDPOINT=mock-global-gs1-resolver-object-store
-      - MINIO_PORT=9000
+      - MINIO_PORT=9001
       - MINIO_USE_SSL=false
       - MINIO_ACCESS_KEY=minioadmin
       - MINIO_SECRET_KEY=minioadmin
