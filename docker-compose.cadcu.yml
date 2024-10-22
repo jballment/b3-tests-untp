@@ -21,10 +21,20 @@ services:
 
   vckit-api:
     image: ghcr.io/uncefact/project-vckit:sha-2adb515@sha256:e109a76f66f6d7763c0addde3a0fb1eee10ade21e2966a67c88348d37eb8db70
-    env_file:
-      - local.env
+    environment:
+      - DATABASE_HOST=${VCKIT_DATABASE_HOST}
+      - DATABASE_TYPE=${VCKIT_DATABASE_TYPE}
+      - DATABASE_USERNAME=${VCKIT_DATABASE_USERNAME}
+      - DATABASE_PASSWORD=${VCKIT_DATABASE_PASSWORD}
+      - DATABASE_NAME=${VCKIT_DATABASE_NAME}
+      - DATABASE_PORT=${VCKIT_DATABASE_PORT}
+      - DATABASE_ENCRYPTION_KEY=${VCKIT_DATABASE_ENCRYPTION_KEY}
+      - PORT=${VCKIT_INTERNAL_PORT}
+      - PROTOCOL=${VCKIT_PROTOCOL}
+      - API_DOMAIN=${VCKIT_API_DOMAIN}
+      - API_KEY=${VCKIT_API_KEY}
     ports:
-      - 3332:3332
+      - 3332:${VCKIT_INTERNAL_PORT}
     depends_on:
       - db
     restart: always
@@ -34,9 +44,9 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=vckit
+      - POSTGRES_USER=${VCKIT_DATABASE_USERNAME}
+      - POSTGRES_PASSWORD=${VCKIT_DATABASE_PASSWORD}
+      - POSTGRES_DB=${VCKIT_DATABASE_NAME}
     volumes:
       - vckit-data:/var/lib/postgresql/data
     restart: always
@@ -44,14 +54,14 @@ services:
   storage-service:
     image: ghcr.io/uncefact/project-identity-resolver:sha-40264dd@sha256:aa3edd2f142f0edabfa9c7b1e16b6a69835913cc1fc345f3e478c7801c0eb060
     ports:
-      - 3334:443
+      - 3334:${VCS_PORT}
     environment:
-      - API_VERSION=v1
-      - PROTOCOL=https
-      - DOMAIN=vcs.cadcu.pyx.io
-      - PORT=443
-      - AVAILABLE_BUCKETS=verifiable-credentials,private-verifiable-credentials,epcis-events
-      - STORAGE_TYPE=local
+      - API_VERSION=${VCS_API_VERSION}
+      - PROTOCOL=${VCS_PROTOCOL}
+      - DOMAIN=${VCS_DOMAIN}
+      - PORT=${VCS_PORT}
+      - AVAILABLE_BUCKETS=${VCS_AVAILABLE_BUCKETS}
+      - STORAGE_TYPE=${VCS_STORAGE_TYPE}
     volumes:
       - ./storage-data:/app/src/uploads
     restart: always
@@ -60,22 +70,22 @@ services:
     # Replace with local or deployed image
     image: ghcr.io/pyx-industries/pyx-identity-resolver:latest@sha256:71a02b8b0a2b9c7cc18d33a54060e9af4d543e34bdd6a47c3b3cf4dcadb1711e
     ports:
-      - '3000:3000'
+      - '${IDR_PORT}:${IDR_PORT}'
     environment:
-      - MINIO_ENDPOINT=identity-resolver-service-object-store
-      - MINIO_PORT=9000
-      - MINIO_USE_SSL=false
-      - MINIO_ACCESS_KEY=minioadmin
-      - MINIO_SECRET_KEY=minioadmin
-      - MINIO_BUCKET_NAME=idr-bucket-1
-      - MINIO_PATH_STYLE=true
-      - IDENTIFIER_PATH=identifiers
-      - API_KEY=test123
-      - APP_ENDPOINT=https://idr.cadcu.pyx.io
-      - APP_NAME=IDR-1
-      - RESOLVER_DOMAIN=https://idr.cadcu.pyx.io
-      - LINK_TYPE_VOC_DOMAIN=https://idr.cadcu.pyx.io/voc
-      - PORT=3000
+      - MINIO_ENDPOINT=${IDR_MINIO_ENDPOINT}
+      - MINIO_PORT=${IDR_MINIO_PORT}
+      - MINIO_USE_SSL=${IDR_MINIO_USE_SSL}
+      - MINIO_ACCESS_KEY=${IDR_MINIO_ACCESS_KEY}
+      - MINIO_SECRET_KEY=${IDR_MINIO_SECRET_KEY}
+      - MINIO_BUCKET_NAME=${IDR_MINIO_BUCKET_NAME}
+      - MINIO_PATH_STYLE=${IDR_MINIO_PATH_STYLE}
+      - IDENTIFIER_PATH=${IDR_IDENTIFIER_PATH}
+      - API_KEY=${IDR_API_KEY}
+      - APP_ENDPOINT=${IDR_APP_ENDPOINT}
+      - APP_NAME=${IDR_APP_NAME}
+      - RESOLVER_DOMAIN=${IDR_RESOLVER_DOMAIN}
+      - LINK_TYPE_VOC_DOMAIN=${IDR_LINK_TYPE_VOC_DOMAIN}
+      - PORT=${IDR_PORT}
     depends_on:
       - identity-resolver-service-object-store
     restart: always
@@ -84,11 +94,11 @@ services:
     image: quay.io/minio/minio:RELEASE.2024-08-17T01-24-54Z-cpuv1
     command: server /data --console-address ":9090"
     ports:
-      - '9000:9000'
+      - '${IDR_MINIO_PORT}:9000'
       - '9090:9090'
     environment:
-      - MINIO_ROOT_USER=minioadmin
-      - MINIO_ROOT_PASSWORD=minioadmin
+      - MINIO_ROOT_USER=${IDR_MINIO_ACCESS_KEY}
+      - MINIO_ROOT_PASSWORD=${IDR_MINIO_SECRET_KEY}
     volumes:
       - ./minio_data/identity-resolver-service-object-store:/data
     restart: always
@@ -97,22 +107,22 @@ services:
     # Replace with local or deployed image
     image: ghcr.io/pyx-industries/pyx-identity-resolver:latest@sha256:71a02b8b0a2b9c7cc18d33a54060e9af4d543e34bdd6a47c3b3cf4dcadb1711e
     ports:
-      - '3001:3001'
+      - '${GS1_PORT}:${GS1_PORT}'
     environment:
-      - MINIO_ENDPOINT=mock-global-gs1-resolver-object-store
-      - MINIO_PORT=9001
-      - MINIO_USE_SSL=false
-      - MINIO_ACCESS_KEY=minioadmin
-      - MINIO_SECRET_KEY=minioadmin
-      - MINIO_BUCKET_NAME=idr-bucket-2
-      - MINIO_PATH_STYLE=true
-      - IDENTIFIER_PATH=identifiers
-      - API_KEY=test456
-      - APP_ENDPOINT=https://mock-gs1-idr.cadcu.pyx.io
-      - APP_NAME=IDR-2
-      - RESOLVER_DOMAIN=https://mock-gs1-idr.cadcu.pyx.io
-      - LINK_TYPE_VOC_DOMAIN=https://mock-gs1-idr.cadcu.pyx.io/voc
-      - PORT=3001
+      - MINIO_ENDPOINT=${GS1_MINIO_ENDPOINT}
+      - MINIO_PORT=${GS1_MINIO_PORT}
+      - MINIO_USE_SSL=${GS1_MINIO_USE_SSL}
+      - MINIO_ACCESS_KEY=${GS1_MINIO_ACCESS_KEY}
+      - MINIO_SECRET_KEY=${GS1_MINIO_SECRET_KEY}
+      - MINIO_BUCKET_NAME=${GS1_MINIO_BUCKET_NAME}
+      - MINIO_PATH_STYLE=${GS1_MINIO_PATH_STYLE}
+      - IDENTIFIER_PATH=${GS1_IDENTIFIER_PATH}
+      - API_KEY=${GS1_API_KEY}
+      - APP_ENDPOINT=${GS1_APP_ENDPOINT}
+      - APP_NAME=${GS1_APP_NAME}
+      - RESOLVER_DOMAIN=${GS1_RESOLVER_DOMAIN}
+      - LINK_TYPE_VOC_DOMAIN=${GS1_LINK_TYPE_VOC_DOMAIN}
+      - PORT=${GS1_PORT}
     depends_on:
       - mock-global-gs1-resolver-object-store
     restart: always
@@ -121,11 +131,11 @@ services:
     image: quay.io/minio/minio:RELEASE.2024-08-17T01-24-54Z-cpuv1
     command: server /data --console-address ":9091"
     ports:
-      - '9001:9000'
+      - '${GS1_MINIO_PORT}:9000'
       - '9091:9090'
     environment:
-      - MINIO_ROOT_USER=minioadmin
-      - MINIO_ROOT_PASSWORD=minioadmin
+      - MINIO_ROOT_USER=${GS1_MINIO_ACCESS_KEY}
+      - MINIO_ROOT_PASSWORD=${GS1_MINIO_SECRET_KEY}
     volumes:
       - ./minio_data/mock-global-gs1-resolver-object-store:/data
     restart: always
